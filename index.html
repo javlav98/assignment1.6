@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox login Replica</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 20px;
+        background-color: rgb(255, 255, 255);
+      }
+      .google {
+        width: 345px;
+        height: 45px;
+        border: 1px solid #e4e4e4;
+        margin: 15px 0;
+        padding: 0 10px;
+      }
+      .apple {
+        width: 345px;
+        height: 45px;
+        border: 1px solid #e4e4e4;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .emailInput {
+        width: 350px;
+        height: 50px;
+        border: 1px solid #e4e4e4;
+        margin: 10px 0;
+        margin-bottom: 30px;
+        padding: 0 10px;
+      }
+      .loginButton {
+        width: 350px;
+        height: 60px;
+        border: 1px solid #0070e0;
+        margin: 10px 0;
+        padding: 0 10px;
+        background-color: #0070e0;
+        color: #fff;
+        font-weight: 700;
+      }
+      /** form hr {
+        width: 350px;
+        margin: 10px 0;
+        border: 1px solid #e4e4e4; 
+      } **/
+
+      .linkz { 
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .linkz p {
+        margin-right: 150px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+      }
+
+      .linkz a {
+        text-decoration: none;
+        color: #0070e0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
+        color: #0070e0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+      }
+      .navbar div {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      .divider {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+      .loginButton:hover{
+        color: black; 
+        cursor: pointer;
+    }
+      
+       @media screen and (max-width: 767px) {
+        .linkz {
+            display: block;
+            margin-right: 150px;
+        }
+
+        .linkz p {
+            margin-bottom: 10px;
+        }
+
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar__logo">Dropbox</div>
+    <button class="navbar__button">Sign Up</button>
+    </nav>
+    <hr>
+
+    <form>
+    <div class="linkz"><p>Login</p><a href="https://www.dropbox.com/login"> or create an account</a></div>
+    <input type="text" placeholder="Continue with Google" class="google">
+    <input type="text" placeholder="Continue with Apple" class="apple">
+    <!-- <hr> -->
+    <div class="divider"><p>or</p></div>
+    <input type="text" placeholder="Email" class="emailInput">
+    <input type="submit" value="Continue" class="loginButton">
+    </form>
+
+</body>
+</html>
